@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: import.meta.env.VITE_API_URL || 'https://inventory-management-system-umber-one.vercel.app/api',
+    baseURL: import.meta.env.VITE_API_URL || 'https://inventory-management-system-server-psi.vercel.app/api',
     withCredentials: true
 });
 
@@ -36,3 +36,4 @@ api.interceptors.response.use(
 
 
 export default api;
+
